@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Inquiry Form</title>
+    <!-- Add your custom CSS for styling and animations -->
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #c7c8bd;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .inquiry-form {
+            background-color: #e7f457;
+            padding: 90px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #705710(0, 0, 0, 0.2);
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin: 10px 0;
+        }
+
+        .form-group label {
+            display: block;
+        }
+
+        .form-group select,
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #705710;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        .submit-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .submit-button button {
+            padding: 10px 20px;
+            background-color: #705710;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .submit-button button:hover {
+            background-color: #705710;
+        }
+    </style>
+</head>
+<body>
+    <div class="inquiry-form">
+        <h2>Product Inquiry</h2>
+        <form action="whatsapp.php" method="post">
+            <div class="form-group">
+                <label for="product">Select Modality:</label>
+                <select id="product" name="product" required>
+                    <option value="product1">CT</option>
+                    <option value="product2">MRI</option>
+                    <option value="product3">PETCT</option>
+                    <option value="product3">MAMMOGRAPHY</option>
+                    <option value="product3">FLOURO & XRAY</option>
+                    <option value="product3">USG & DOPPLER</option>
+                    <option value="product3">GAMMA CAMERA</option>
+                    <option value="product3">CBCT & OPG</option>
+                    <option value="product3">CR & DR</option>
+                    <option value="product3">LITHOTRIPSY</option>
+                    <option value="product3">C-ARM</option>
+                    <option value="product3">INJECTOR</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="Mobile Number">Your Mobile Number:</label>
+                <input type="Mobile Number" id="Mobile Number" name="Mobile Number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Your Country:</label>
+                <input type="country" id="country" name="country" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+            </div>
+            <!-- Add more mandatory fields as needed -->
+
+            <div class="form-group submit-button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

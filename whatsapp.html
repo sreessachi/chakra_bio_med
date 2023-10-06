@@ -1,0 +1,16 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $message = $_POST["message"];
+
+    // Your WhatsApp phone number (include country code)
+    $whatsappNumber = '+65 8421 6175';
+
+    // Generate the WhatsApp chat link
+    $whatsappLink = "https://wa.me/+65 8421 6175?text=Hello,%20I%20have%20an%20inquiry:%0AName:%20$name%0AInquiry:%20$message";
+
+    // Redirect to the WhatsApp chat link
+    header("Location: $whatsappLink");
+    exit();
+}
+?>
