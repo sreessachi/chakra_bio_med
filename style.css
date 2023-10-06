@@ -39,8 +39,8 @@ font-display: swap;
     font-display: swap;
 }
 :root {
-  --body-color: #424B5C;
-  --primary-color: #705710;
+  --body-color:  #705710;
+  --primary-color: #f6c748;
   --headding-color: #222222;
   --section-bg: #F8F8F8;
 }
