@@ -40,7 +40,7 @@ font-display: swap;
 }
 :root {
   --body-color:  #705710;
-  --primary-color: #f6c748;
+  --primary-color:  #f6c748;
   --headding-color: #222222;
   --section-bg: #F8F8F8;
 }
@@ -239,7 +239,7 @@ p{
 .menu ul li {
     display: inline-block;
     position: relative;
-        background-color: #705710;
+        background-color: #f1ebeb;
     
 }
 header {
@@ -266,7 +266,7 @@ header {
 }
 .menu ul li:hover > a {
     color: var(--primary-color);
-    background-color: #d3cbff;
+    background-color: #705710;
 }
 .transparent-header-2 .menu ul li a {
     padding: 30px 20px;
